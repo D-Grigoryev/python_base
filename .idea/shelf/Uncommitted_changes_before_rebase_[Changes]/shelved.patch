@@ -1,0 +1,34 @@
+Index: lesson_1/task-3._base.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\nЗадание 3.\nУзнайте у пользователя целое положительное число n.\nНайдите сумму чисел n + nn + nnn.\nПример:\nВведите число n: 3\nn + nn + nnn = 369\n\"\"\"\nnum = input('Введите целое положительное число: ')\nprint(f'Сумма чисел {num} + {num + num} + {num + num + num} = {int(num) + int(num * 2) + int(num * 3)} ')\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson_1/task-3._base.py b/lesson_1/task-3._base.py
+--- a/lesson_1/task-3._base.py	(revision 111baa42e982f98d08fd264ffd8a7c0ec440cf18)
++++ b/lesson_1/task-3._base.py	(date 1678610044254)
+@@ -1,4 +1,4 @@
+-"""
++"""x
+ Задание 3.
+ Узнайте у пользователя целое положительное число n.
+ Найдите сумму чисел n + nn + nnn.
+Index: lesson_1/task_2_ additionally.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Задача 4: Петя, Катя и Сережа делают из бумаги журавликов. Вместе они сделали S журавликов.\n# Сколько журавликов сделал каждый ребенок, если известно, что Петя и Сережа сделали\n# одинаковое количество журавликов, а Катя сделала в два раза больше журавликов, чем Петя и Сережа вместе?\n# *Пример:*\n#\n# 6 -> 1  4  1\n# 24 -> 4  16  4\n#     60 -> 10  40  10\n\ndef cranes(n):\n    temp = [0, 0, 0]\n    temp[0] = (n // 3) // 2\n    temp[-1] = temp[0]\n    temp[1] = (temp[0]+temp[0])*2\n    return temp\n\nprint(*cranes(60))
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson_1/task_2_ additionally.py b/lesson_1/task_2_ additionally.py
+--- a/lesson_1/task_2_ additionally.py	(revision 111baa42e982f98d08fd264ffd8a7c0ec440cf18)
++++ b/lesson_1/task_2_ additionally.py	(date 1678546073382)
+@@ -14,4 +14,4 @@
+     temp[1] = (temp[0]+temp[0])*2
+     return temp
+ 
+-print(*cranes(60))
+\ No newline at end of file
++print(*cranes(6))
+\ No newline at end of file
