@@ -14,4 +14,4 @@ def cranes(n):
     temp[1] = (temp[0]+temp[0])*2
     return temp
 
-print(*cranes(60))
+print(*cranes(6))
