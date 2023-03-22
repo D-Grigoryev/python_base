@@ -43,4 +43,4 @@ def score(user_word):
     return summ_elements
 
 
-print(score('ноутбук '.upper()))
+print(score('ноутбук'.upper()))
