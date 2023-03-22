@@ -34,17 +34,11 @@ def score(user_word):
     summ_elements = 0
     for el in user_word:
         summ_elements += list_1.count(el)
-    for el in user_word:
         summ_elements += 2 if list_2.count(el) > 0 else 0
-    for el in user_word:
         summ_elements += 3 if list_3.count(el) > 0 else 0
-    for el in user_word:
         summ_elements += 4 if list_4.count(el) > 0 else 0
-    for el in user_word:
         summ_elements += 5 if list_5.count(el) > 0 else 0
-    for el in user_word:
         summ_elements += 8 if list_6.count(el) > 0 else 0
-    for el in user_word:
         summ_elements += 10 if list_7.count(el) > 0 else 0
     return summ_elements
 
